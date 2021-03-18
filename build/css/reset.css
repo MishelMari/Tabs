@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-size: contain;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabs {
+    background: url(../images/01.png);
+    background-color: #292d3e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1100px;
+}
+
+.tabs__wrapper {
+    width: 600px;
+    height: 542px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 125px 0px 0px 0px;
+}
+
+.tabs__nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /* background: #f8f8f8;*/
+    height: 115px;
+    background-color: #2b3040;
+    margin: 0;
+    padding: 60px 0px 0px 0px;
+}
+
+.tabs__icons {
+    top: 150px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.tabs__number {
+    /* Style for "7.8" */
+    width: 27px;
+    height: 0px;
+    color: #aaadbb;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 21px;
+    margin-left: 20px;
+    /* Text style for "7, .8" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.tabs__ellipse-gray {
+    top: 330px;
+    position: absolute;
+    margin-left: 210px;
+    width: 67px;
+    height: 67px;
+    border: 2px solid #787c9b;
+    border-radius: 50%;
+}
+
+.tabs__ellipse-green {
+    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 5px;
+    top: 330px;
+    position: absolute;
+    margin-left: 210px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.tabs__link {
+    font-family: 'Raleway', sans-serif;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: #fbfbfb;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "I, NFORMAT" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.tabs__discounts {
+    order: 3;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 30px;
+    max-width: 350px;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    padding: 0px 0px 0px 250px;
+    color: #e6c73e;
+}
+
+.tabs__price {
+    color: #fff;
+    font-size: 32px;
+}
+
+.tabs__heading {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1px;
+    /*text-align: center;*/
+    /* Text style for "FarCry 4" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.tabs__rele {
+    /* Style for "First Rele" */
+    color: #fdfdfd;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    /* Text style for "F, irst Re" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin-top: -65px;
+}
+
+.tabs__message {
+    /* Style for "In Far Cry" */
+    width: 306px;
+    height: 80px;
+    color: #b7bacd;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+    /* Text style for "In Far Cry" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding-top: 30px;
+}
+
+.tabs__img {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.tabs__link:hover {
+    opacity: 0.6;
+}
+
+.tabs__link_active {
+    /* background: lightgray;*/
+    border-bottom: 3px solid lightgray;
+    cursor: default;
+}
+
+
+/*.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+    background-color: #efefef;
+}*/
+
+.tabs__content-1 {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.tabs__content {
+    padding: 1rem;
+    width: 600px;
+    height: 541px;
+    box-shadow: 0 23px 57px rgba(0, 0, 0, 0.4);
+    background-color: #212534;
+}
+
+.tabs__text {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3.5% 5% 4% 5%;
+    color: #e8e8e8;
+    margin-top: -50px;
+}
+
+.tabs__pane {
+    display: none;
+}
+
+.tabs__pane_show {
+    display: block;
+    color: #fff;
+}
+
+.tabs__buy {
+    /* Style for "Rounded Re" */
+    width: 164px;
+    height: 55px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #13e28d;
+    /*margin-top: 30px;*/
+    margin-left: 370px;
+    top: 25px;
+    position: relative;
+}
+
+.tabs__buy:hover {
+    background-color: #3e4cb4;
+    opacity: 0.7;
+}
+
+
+/*star*/
+
+.rating-area {
+    position: absolute;
+    padding-top: 285px;
+    padding-left: 50px;
+}
+
+.rating-area:not(:checked)>input {
+    display: none;
+}
+
+.rating-area:not(:checked)>label {
+    float: right;
+    padding: 0;
+    cursor: pointer;
+    font-size: 30px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked)>label:before {
+    content: '★';
+}
+
+.rating-area>input:checked~label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked)>label:hover,
+.rating-area:not(:checked)>label:hover~label {
+    color: gold;
+}
+
+.rating-area>input:checked+label:hover,
+.rating-area>input:checked+label:hover~label,
+.rating-area>input:checked~label:hover,
+.rating-area>input:checked~label:hover~label,
+.rating-area>label:hover~input:checked~label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area>label:active {
+    position: relative;
+}
+
+
+/* skills */
+
+.circle-wrap {
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+    background: #e6e2e7;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -130px;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 100px, 100px, 65px);
+}
+
+.circle-wrap .circle .mask .fill {
+    clip: rect(0px, 65px, 100px, 0px);
+    background-color: #13e28d;
+}
+
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(106deg);
+}
+
+@keyframes fill {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(106deg);
+    }
+}
+
+.circle-wrap .inside-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #212534;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-size: 20px;
+}

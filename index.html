@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="build/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="build/css/reset.css">
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tabs__wrapper">
+                <div class="tabs__nav">
+
+                    <a class="tabs__link tabs__link_active" href="#content-1">
+                        <img src="build/images/01icontooltip.png" class="tabs__icons" alt="tooltip"> INFORMATION
+                    </a>
+
+                    <a class="tabs__link" href="#content-2">
+                        <img src="build/images/02iconcard.png" class="tabs__icons" alt="card"> RATINGS INFO
+                    </a>
+
+                    <a class="tabs__link" href="#content-3">
+                        <img src="build/images/03iconbasket.png" class="tabs__icons" alt="basket"> WHERE TO BUY</a>
+                </div>
+
+                <div class="tabs__content">
+                    <div class="tabs__pane tabs__pane_show" id="content-1">
+                        <div class="tabs__content-1">
+                            <img src="build/images/02.png" alt="man" class="tabs__img">
+
+                            <div class="rating-area">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «5»"></label>
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «4»"></label>
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «2»"></label>
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «1»"></label>
+                            </div>
+
+                            <div class="tabs__text">
+                                <h2 class="tabs__heading">FarCry 4</h2>
+                                <h4 class="tabs__rele">First Released Nov 17, 2014</h4>
+                                <div class="tabs__ellipse">
+
+                                    <div class="circle-wrap">
+                                        <div class="circle">
+                                            <div class="mask full">
+                                                <div class="fill"></div>
+                                            </div>
+                                            <div class="mask half">
+                                                <div class="fill"></div>
+                                            </div>
+                                            <div class="inside-circle">
+                                                7.8
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <p class="tabs__message">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="tabs__discounts">
+                            20% OFF!
+                            <span class="tabs__price">$59.96</span>
+                        </p>
+                        <button class="tabs__buy">BUY IT NOW</button>
+                        <!--<div class="rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>-->
+
+                    </div>
+                    <div class="tabs__pane" id="content-2">
+                        Содержимое 2...
+                    </div>
+                    <div class="tabs__pane" id="content-3">
+                        Содержимое 3...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/index.js"></script>
+</body>
+
+</html>
